@@ -1,0 +1,226 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.logout-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.logout-btn:hover {
+  background-color: #cc0000;
+}
+
+/* Login Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.login-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-form button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.login-form button:hover {
+  background-color: #218838;
+}
+
+.hint {
+  font-size: 12px;
+  color: gray;
+  margin-top: 10px;
+}
+
+/* User List */
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* User Card */
+.user-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+  width: 430px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.user-info {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.user-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end; /* Aligns buttons to the right */
+}
+
+.user-actions button {
+  min-width: 70px; /* Ensures uniform button width */
+  text-align: center;
+}
+
+
+.user-actions button:first-child {
+  background-color: #ffc107;
+  color: black;
+}
+
+.user-actions button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+.user-actions button:hover:first-child {
+  background-color: #e0a800;
+}
+
+.user-actions button:hover:last-child {
+  background-color: #c82333;
+}
+
+/* Search Bar */
+.search-bar {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  margin: 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Edit User Form */
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.edit-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.edit-form button {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.edit-form button:first-child {
+  background-color: #007bff;
+  color: white;
+}
+
+.edit-form button:last-child {
+  background-color: #6c757d;
+  color: white;
+}
+
+.edit-form button:hover:first-child {
+  background-color: #0056b3;
+}
+
+.edit-form button:hover:last-child {
+  background-color: #5a6268;
+}
+
+/* Messages */
+.message {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #155724;
+  background-color: #d4edda;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #c3e6cb;
+}
